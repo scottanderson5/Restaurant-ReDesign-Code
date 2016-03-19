@@ -1,0 +1,374 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+/*********** GRID LAYOUT ***************/
+$tot-width: 100%;
+$num-col: 12;
+$gut-width: 2%;
+
+$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
+
+@mixin grid($geezy){
+  width: ($geezy * $ind-col-width) + ($gut-width * ($geezy - 1));
+  /*float: left;*/
+  margin-right: $gut-width;
+  &:last-child {
+    margin-right: auto;
+  }
+}  
+
+/***************************************/
+
+.row {
+    background-color: #CCB378;
+    overflow: hidden;
+ }  
+
+.col {
+  background-color: #CCB378;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+@media (min-width:550px){
+  .col{
+    margin-bottom: 0;
+  }
+  .col-1 {
+  @include grid(1);
+  }
+
+  .col-2 {
+  @include grid(2);
+  }
+
+  .col-3 {
+  @include grid(3);
+  }
+
+  .col-4 {
+  @include grid(4);
+  }
+  
+  .col-5 {
+  @include grid(5);
+  }
+  
+  .col-6 {
+  @include grid(6);
+  }
+  
+  .col-7 {
+  @include grid(7);
+  }
+  
+  .col-8 {
+  @include grid(8);
+  }
+  
+  .col-9 {
+  @include grid(9);
+  }
+  
+  .col-10 {
+  @include grid(10);
+  }
+  
+  .col-11 {
+  @include grid(11);
+  }
+  
+  .col-12 {
+  @include grid(12);
+  }
+
+	
+}
+
+/************** STYLING ***********************/
+
+.center{
+	text-align: center;
+}
+
+.auto-margin{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.height-5{
+	height: 5em;
+}
+
+.height-2{
+	height: 2em;
+}
+
+.position-r{
+	box-sizing: border-box;
+	position: relative;
+}
+
+/******************* A TAGS *******************/
+
+.a-nav{
+	text-decoration: none;
+	color: black;
+}
+
+.a-nav:hover{
+	color: white;
+}
+
+.a-email{
+	text-decoration: none;
+	color: black;
+}
+
+.a-email:hover{
+	text-decoration: underline;
+}
+
+/******************* HEADER IMAGE *******************/
+
+.wrap-sheep{
+	width: 9%;
+	box-size: border-box;
+	
+	@media (min-width: 550px){
+	margin-right: auto;
+	margin-left: auto;
+	}
+}
+
+.sheep{
+	width: 7em;
+
+	@media (min-width: 550px){
+		width: 8em;
+	}
+
+	@media (min-width: 760px){
+		width: 9em;
+	}
+}
+
+/******************* NAV BAR ***********************/
+
+.nav-bar{
+	width: 100%;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+
+	@media (min-width: 550px){
+		width: 32em;
+	}
+	/*@media (min-width: 760px){
+		max-width: 32em;
+	}*/
+}
+
+.ul-nav-bar{
+	overflow: hidden;
+}
+
+.li-nav-bar{
+	font-family: adelle;
+	display: inline-block;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	
+	@media (min-width: 550px){
+	margin-right: 1em;
+	margin-left: 1em;
+	}
+}
+
+/****************INTRO PIC ************************/
+
+.welcome-pic{
+	/*background-image: url(restaraunt-redesign/Assets/BGImage.gif);*/
+	box-sizing: border-box;
+	background-position: center;
+	margin-top: 1em;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 8em;
+	padding: 0;
+	position: relative;
+
+	@media (min-width: 550px){
+		height: 23em;
+	}
+
+	@media (min-width: 760px){
+		height: 30em;
+	}
+}
+
+.welcome-type{
+	font-family: source-sans-pro;
+	color: white;
+	font-size: 32px;
+	position: absolute;
+	text-align: center;
+	top: 6.7em;
+	left: 0.25em;
+
+	@media (min-width: 550px){
+		font-size: 70px;
+		top: 3em;
+	}
+
+	@media (min-width: 760px){
+		font-size: 100px;
+		text-align: left;
+		top: 2.5em;
+	}
+}
+
+/******************** BSL Description *********************/
+
+.description-type{
+	font-family: source-sans-pro;
+	text-align: center;
+	font-size: 16px;
+	
+	@media (min-width: 550px){
+		font-size: 24px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	@media (min-width: 760px){
+		font-size: 32px;
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+}
+
+/******************* SPECIALS AND EVENTS ****************************/
+
+%pic{
+	box-sizing: border-box;
+	height: 14em;
+	background-size: 100% 100%;
+	/*float: left;*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	margin-top: 1em;
+
+	@media (min-width: 550px){
+		width: 50%;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: 0;
+		float: left;
+		height: 18em;
+	}
+
+	@media (min-width: 760px){
+		height: 24em;
+	}
+}
+
+.specials-pic{
+	background-image: url(http://farm5.static.flickr.com/4115/4931400474_61f352c130_o.jpg);
+	@extend %pic;
+}
+
+.info-type-box{
+	background-color: white;
+	/*float: left;*/
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 1em;
+	width: 70%;
+	height: 14em;
+
+	@media (min-width: 550px){
+		width: 50%;
+		margin-right: auto;
+		margin-left: 0;
+		float: left;
+		height: 18em;
+	}
+
+	@media (min-width: 760px){
+		height: 24em;
+	}
+}
+
+.specials-pic-type{
+	font-family: source-sans-pro;
+	color: white;
+	font-size: 40px;
+	text-align: left;
+	position: absolute;
+	top: 1.3em;
+	left: 0.25em;
+
+	@media (min-width: 550px){
+		font-size: 45px;
+	}
+
+	@media (min-width: 760px){
+		font-size: 75px;
+	}
+}
+
+%info-type{
+	font-family: adelle;
+	font-size: 1.15em;
+	background-color: white;
+	text-align: center;
+	position: absolute;
+	line-height: 1.4em;
+	left: 0.3em;
+
+	@media (min-width: 550px){
+		font-size: 1.1em;
+		line-height: 1.8em;
+	}
+
+	@media (min-width: 768px){
+		font-size: 1.8em;
+	}
+}
+
+.info-type-specials{
+	@extend %info-type;
+	top: 1.3em;
+}
+
+.info-type-events{
+	@extend %info-type;
+	top: 2.5em;
+}
+
+.events-pic{
+	background-image: url(http://mediad.publicbroadcasting.net/p/kut/files/styles/x_large/public/201407/14514983295_ba7ad248bd_k_1.jpg);
+	@extend %pic;
+}
+
+/****************** FOOTER *************************/
+
+.s-media{
+	width: 2em;
+	display: inline-block;
+}
+
+.address{
+	font-family: adelle;
+	font-size: 0.8em;
+}
+
+
+
+
+
