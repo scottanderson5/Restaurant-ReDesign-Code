@@ -149,7 +149,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 		width: 8em;
 	}
 
-	@media (min-width: 760px){
+	@media (min-width: 1000px){
 		width: 9em;
 	}
 }
@@ -205,7 +205,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 		height: 23em;
 	}
 
-	@media (min-width: 760px){
+	@media (min-width: 1000px){
 		height: 30em;
 	}
 }
@@ -224,7 +224,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 		top: 3em;
 	}
 
-	@media (min-width: 760px){
+	@media (min-width: 1000px){
 		font-size: 100px;
 		text-align: left;
 		top: 2.5em;
@@ -244,7 +244,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 		padding-bottom: 1em;
 	}
 
-	@media (min-width: 760px){
+	@media (min-width: 1000px){
 		font-size: 32px;
 		padding-top: 2em;
 		padding-bottom: 2em;
@@ -272,7 +272,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 		height: 18em;
 	}
 
-	@media (min-width: 760px){
+	@media (min-width: 1000px){
 		height: 24em;
 	}
 }
@@ -299,7 +299,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 		height: 18em;
 	}
 
-	@media (min-width: 760px){
+	@media (min-width: 1000px){
 		height: 24em;
 	}
 }
@@ -317,7 +317,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 		font-size: 45px;
 	}
 
-	@media (min-width: 760px){
+	@media (min-width: 1000px){
 		font-size: 75px;
 	}
 }
@@ -336,7 +336,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 		line-height: 1.8em;
 	}
 
-	@media (min-width: 768px){
+	@media (min-width: 1000px){
 		font-size: 1.8em;
 	}
 }
