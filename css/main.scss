@@ -118,6 +118,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	font-weight: 700;
 }
 
+.italic{
+	font-style: italic;
+}
+
 /******************* A TAGS *******************/
 
 .a-nav{
@@ -382,13 +386,18 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 /**************BEER LIST*****************************/
 
 .beer-list{
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://austin.culturemap.com/thumbnail/800x600/photos/2014/01/03/interior-of-Black-Sheep-Lodge-with-dartboard_124452.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	overflow: hidden;
 	margin-top: 1em;
 	margin-bottom: 1em;
 	width: 75%;
+	background-color: rgba(0, 0, 0, 0);
+
+	@media (min-width: 550px){
+		background-color: none;
+		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://austin.culturemap.com/thumbnail/800x600/photos/2014/01/03/interior-of-Black-Sheep-Lodge-with-dartboard_124452.jpg);
+	}
 }
 
 .beer-list-current{
@@ -396,21 +405,36 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	text-decoration: underline;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: rgba(0, 0, 0, 0);
+	background-image: url(http://austin.culturemap.com/thumbnail/800x600/photos/2014/01/03/interior-of-Black-Sheep-Lodge-with-dartboard_124452.jpg);
 	font-family: source-sans-pro;
 	color: white;
-	font-size: 2em;
+	font-size: 1.5em;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	@media (min-width: 550px){
+		font-size: 2em;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		background-image: none;
+		background-color: rgba(0, 0, 0, 0);
+	}
 }
 
 .beer-list-left{
-	background-color: rgba(0, 0, 0, 0);
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
+	background-color: black;
 	padding-left: 0.5em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0.5em;
 
 	@media (min-width: 550px){
+		background-color: rgba(0, 0, 0, 0);
 		float: left;
+		padding-bottom: 0.5em;
 		padding-left: 4em;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
 	}
 
 	@media (min-width: 1000px){
@@ -419,14 +443,19 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 .beer-list-right{
-	background-color: rgba(0, 0, 0, 0);
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
+	background-color: black;
 	padding-right: 0.5em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0.5em;
 
 	@media (min-width: 550px){
+		background-color: rgba(0, 0, 0, 0);
 		float: right;
+		padding-top: 0.5em;
 		padding-right: 4em;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
 	}
 
 	@media (min-width: 1000px){
@@ -451,6 +480,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	padding: 0.5em;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.bg-white{
+	background-color: white;
 }
 
 .border{
@@ -521,6 +554,26 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	}
 }
 
+.menu-title{
+	@extend %menu-style;
+	background-color: white;
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 1em;
+	list-style-type: none;
+	color: #753324;
+	text-decoration: underline;
+	font-family: source-sans-pro;
+
+	@media (min-width:550px){
+		font-size: 2em;
+	}
+
+	@media (min-width: 1000px){
+		font-size: 3em;
+	}
+}
+
 .menu-categories{
 	@extend %menu-style;
 	font-size: 1.5em;
@@ -571,11 +624,21 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 .mini-cat{
-	font-size: 1.6em;
+	font-size: 1em;
 	color: #CC990A;
 	font-family: adelle;
 	list-style-type: none;
 	text-align: center;
+
+	@media (min-width: 550px){
+		font-size: 1.3em;
+	}
+
+	@media (min-width: 1000px){
+		font-size: 1.6em;
+	}
 }
+
+
 
 
