@@ -185,12 +185,14 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	margin-right: 1em;
 	margin-left: 1em;
 	}
+
 }
 
 /****************INTRO PIC ************************/
 
 .welcome-pic{
 	/*background-image: url(restaraunt-redesign/Assets/BGImage.gif);*/
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
 	box-sizing: border-box;
 	background-position: center;
 	margin-top: 1em;
@@ -221,13 +223,13 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 	@media (min-width: 550px){
 		font-size: 70px;
-		top: 3em;
+		top: 3.5em;
 	}
 
 	@media (min-width: 1000px){
 		font-size: 100px;
 		text-align: left;
-		top: 2.5em;
+		top: 3em;
 	}
 }
 
@@ -278,7 +280,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 .specials-pic{
-	background-image: url(http://farm5.static.flickr.com/4115/4931400474_61f352c130_o.jpg);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://farm5.static.flickr.com/4115/4931400474_61f352c130_o.jpg);
 	@extend %pic;
 }
 
@@ -352,7 +354,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 .events-pic{
-	background-image: url(http://mediad.publicbroadcasting.net/p/kut/files/styles/x_large/public/201407/14514983295_ba7ad248bd_k_1.jpg);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://mediad.publicbroadcasting.net/p/kut/files/styles/x_large/public/201407/14514983295_ba7ad248bd_k_1.jpg);
 	@extend %pic;
 }
 
@@ -366,9 +368,44 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .address{
 	font-family: adelle;
 	font-size: 0.8em;
+	margin-bottom: 1em;
 }
 
+/*************** MENU *******************************/
 
+.menu{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: white;
+	
+}
+
+.menu-nav{
+	text-align: center;
+	padding: 1em 4em 1em 4em;
+	font-family: adelle;
+}
+
+.menu-categories{
+	font-size: 4em;
+	text-decoration: underline;
+	list-style-type: none;
+}
+
+.menu-item{
+	font-size: 3em;
+	list-style-type: none;
+}
+
+.menu-description{
+	font-size: 1.5em;
+	list-style-type: none;
+}
+
+.menu-price{
+	font-size: 1.25em;
+	list-style-type: none;
+}
 
 
 
