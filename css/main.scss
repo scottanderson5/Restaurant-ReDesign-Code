@@ -114,6 +114,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	border-radius: 1em;
 }
 
+.bold{
+	font-weight: 700;
+}
+
 /******************* A TAGS *******************/
 
 .a-nav{
@@ -394,6 +398,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	overflow: hidden;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	padding-bottom: 1em;
 }
 
 .menu-nav{
