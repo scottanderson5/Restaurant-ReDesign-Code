@@ -388,10 +388,12 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	overflow: hidden;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	width: 75%;
 }
 
 .beer-list-current{
 	text-align: center;
+	text-decoration: underline;
 	margin-right: auto;
 	margin-left: auto;
 	background-color: rgba(0, 0, 0, 0);
@@ -402,23 +404,39 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .beer-list-left{
 	background-color: rgba(0, 0, 0, 0);
-	float: left;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	padding-left: 9em;
+	padding-left: 0.5em;
+
+	@media (min-width: 550px){
+		float: left;
+		padding-left: 4em;
+	}
+
+	@media (min-width: 1000px){
+		padding-left: 9em;
+	}
 }
 
 .beer-list-right{
 	background-color: rgba(0, 0, 0, 0);
-	float: right;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	padding-right: 9em;
+	padding-right: 0.5em;
+
+	@media (min-width: 550px){
+		float: right;
+		padding-right: 4em;
+	}
+
+	@media (min-width: 1000px){
+		padding-right: 9em;
+	}
 }
 
 .beer-description{
-	font-size: 1.2em;
-	list-style-type: none;
+	font-size: 1em;
+	/*list-style-type: none;*/
 	font-family: adelle;
 	color: white;
 }
@@ -478,9 +496,12 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	/*float: left;*/
 	margin: 0;
 
-	@media (min-width:550px){
-		padding-left: 4em;
+	@media (min-width: 550px){
 		float: left;
+	}
+
+	@media (min-width: 1000px){
+		padding-left: 4em;
 	}
 }
 
@@ -491,33 +512,56 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	margin: 0;
 	/*float: right;*/
 
-	@media (min-width:550px){
-		padding-right: 1em;
+	@media (min-width: 550px){
 		float: right;
+	}
+
+	@media (min-width: 1000px){
+		padding-right: 4em;
 	}
 }
 
 .menu-categories{
 	@extend %menu-style;
-	font-size: 3em;
+	font-size: 1.5em;
 	text-align: center;
 	list-style-type: none;
 	color: #753324;
 	text-decoration: underline;
 	font-family: source-sans-pro;
+
+	@media (min-width:550px){
+		font-size: 2em;
+	}
+
+	@media (min-width: 1000px){
+		font-size: 3em;
+	}
 }
 
 .menu-item{
 	@extend %menu-style;
-	font-size: 2em;
+	font-size: 1em;
 	color: #CC990A;
 	list-style-type: none;
+
+	@media (min-width: 550px){
+		font-size: 1.5em;
+	}
+
+	@media (min-width: 1000px){
+		font-size: 2em;
+	}
 }
 
 .menu-description{
 	@extend %menu-style;
-	font-size: 1.2em;
+	font-size: 1em;
 	list-style-type: none;
+
+	@media (min-width: 1000px){
+		font-size: 1.2em;
+	}
 }
 
 .menu-price{
