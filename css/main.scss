@@ -110,6 +110,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	position: relative;
 }
 
+.border-radius{
+	border-radius: 1em;
+}
+
 /******************* A TAGS *******************/
 
 .a-nav{
@@ -373,37 +377,74 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 /*************** MENU *******************************/
 
+.bg-color{
+	background-color: #F7F6F5;
+	padding: 0.5em;
+}
+
+.border{
+	border: 3px solid #753324;
+}
+
 .menu{
+	background-color: white;
+	margin-right: 0;
+	margin-left: 0;
+	padding-top: 2em;
+	overflow: hidden;
 	margin-top: 1em;
 	margin-bottom: 1em;
-	background-color: white;
-	
 }
 
 .menu-nav{
-	text-align: center;
 	padding: 1em 4em 1em 4em;
+	background-color: white;
+	overflow: hidden;
+}
+
+%menu-style{
+	text-align: center;
 	font-family: adelle;
+	background-color: white;
+	margin: 0;
+}
+
+.menu-nav-left{
+	@extend %menu-style;
+	padding-left: 4em;
+	padding-right: 1em;
+	float: left;
+}
+
+.menu-nav-right{
+	@extend %menu-style;
+	padding-left: 1em;
+	padding-right: 4em;
+	float: right;
 }
 
 .menu-categories{
-	font-size: 4em;
-	text-decoration: underline;
+	font-size: 3em;
+	text-align: center;
 	list-style-type: none;
+	color: #753324;
+	text-decoration: underline;
+	font-family: source-sans-pro;
 }
 
 .menu-item{
-	font-size: 3em;
+	font-size: 2em;
+	color: #CC990A;
 	list-style-type: none;
 }
 
 .menu-description{
-	font-size: 1.5em;
+	font-size: 1.2em;
 	list-style-type: none;
 }
 
 .menu-price{
-	font-size: 1.25em;
+	font-size: 1.1em;
 	list-style-type: none;
 }
 
