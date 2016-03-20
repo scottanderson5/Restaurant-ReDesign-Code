@@ -379,6 +379,53 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	margin-bottom: 1em;
 }
 
+/**************BEER LIST*****************************/
+
+.beer-list{
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://austin.culturemap.com/thumbnail/800x600/photos/2014/01/03/interior-of-Black-Sheep-Lodge-with-dartboard_124452.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.beer-list-current{
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: source-sans-pro;
+	color: white;
+	font-size: 2em;
+}
+
+.beer-list-left{
+	background-color: rgba(0, 0, 0, 0);
+	float: left;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 9em;
+}
+
+.beer-list-right{
+	background-color: rgba(0, 0, 0, 0);
+	float: right;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-right: 9em;
+}
+
+.beer-description{
+	font-size: 1.2em;
+	list-style-type: none;
+	font-family: adelle;
+	color: white;
+}
+
+
+
+
 /*************** MENU *******************************/
 
 .bg-color{
