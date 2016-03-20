@@ -384,6 +384,8 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .bg-color{
 	background-color: #F7F6F5;
 	padding: 0.5em;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .border{
