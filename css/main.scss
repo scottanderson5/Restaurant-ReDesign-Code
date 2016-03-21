@@ -251,6 +251,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	font-family: source-sans-pro;
 	text-align: center;
 	font-size: 16px;
+	max-width: 60%;
 	
 	@media (min-width: 550px){
 		font-size: 24px;
@@ -391,12 +392,15 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	overflow: hidden;
 	margin-top: 1em;
 	margin-bottom: 1em;
-	width: 75%;
 	background-color: rgba(0, 0, 0, 0);
 
 	@media (min-width: 550px){
 		background-color: none;
 		background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://austin.culturemap.com/thumbnail/800x600/photos/2014/01/03/interior-of-Black-Sheep-Lodge-with-dartboard_124452.jpg);
+	}
+
+	@media (min-width: 1000px){
+		max-width: 50em;
 	}
 }
 
@@ -423,7 +427,9 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .beer-list-left{
 	background-color: black;
+	text-align: left;
 	padding-left: 0.5em;
+	list-style-type: none;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-top: 0.5em;
@@ -444,9 +450,12 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .beer-list-right{
 	background-color: black;
+	text-align: left;
+	list-style-type: none;
 	padding-right: 0.5em;
 	margin-top: 0;
 	margin-bottom: 0;
+	padding-left: 0.5em;
 	padding-bottom: 0.5em;
 
 	@media (min-width: 550px){
@@ -484,6 +493,13 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .bg-white{
 	background-color: white;
+	padding-left: 4em;
+}
+
+.bg-beverages{
+	background-color: white;
+	padding-right: 1em;
+	padding-left: 0.8em;
 }
 
 .border{
@@ -518,12 +534,13 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 %menu-style{
-	text-align: center;
+	text-align: left;
 	font-family: adelle;
 }
 
 .menu-nav-left{
 	background-color: white;
+	text-align: left;
 	padding-left: 1em;
 	padding-right: 1em;
 	/*float: left;*/
@@ -540,6 +557,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .menu-nav-right{
 	background-color: white;
+	text-align: left;
 	padding-left: 1em;
 	padding-right: 1em;
 	margin: 0;
@@ -577,7 +595,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .menu-categories{
 	@extend %menu-style;
 	font-size: 1.5em;
-	text-align: center;
+	text-align: left;
 	list-style-type: none;
 	color: #753324;
 	text-decoration: underline;
@@ -628,7 +646,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	color: #CC990A;
 	font-family: adelle;
 	list-style-type: none;
-	text-align: center;
+	text-align: left;
 
 	@media (min-width: 550px){
 		font-size: 1.3em;
