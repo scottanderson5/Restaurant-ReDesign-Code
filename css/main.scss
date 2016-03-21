@@ -23,11 +23,15 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .row {
     background-color: #CCB378;
     overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
  }  
 
 .col {
   background-color: #CCB378;
   overflow: hidden;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 @media (min-width:550px){
@@ -106,6 +110,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .position-r{
 	box-sizing: border-box;
+	margin-bottom: 0;
 	position: relative;
 }
 
@@ -223,7 +228,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
 	/*box-sizing: border-box;*/
 	background-position: center;
-	margin-top: 1em;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	width: 100%;
@@ -267,11 +271,16 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	background-color: brown;
 }
 
+.bg-quote-2{
+	background-color: #CC990A;
+}
+
 .description-type{
 	font-family: source-sans-pro;
 	color: white;
 	text-align: center;
 	font-size: 16px;
+	margin-top: 0;
 	margin-bottom: 0;
 	
 	@media (min-width: 550px){
@@ -296,8 +305,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	/*float: left;*/
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
-	margin-top: 1em;
+	margin-top: 0;
 
 	@media (min-width: 550px){
 		width: 50%;
@@ -324,7 +332,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 1em;
-	width: 70%;
 	height: 14em;
 
 	@media (min-width: 550px){
@@ -344,12 +351,13 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	font-family: source-sans-pro;
 	color: white;
 	font-size: 40px;
-	text-align: left;
+	text-align: center;
 	position: absolute;
 	top: 1.3em;
 	left: 0.25em;
 
 	@media (min-width: 550px){
+		text-align: left;
 		font-size: 45px;
 	}
 
@@ -380,7 +388,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .info-type-specials{
 	@extend %info-type;
-	top: 1.3em;
+	top: 0.6em;
 }
 
 .info-type-events{
@@ -412,48 +420,66 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .beerTap-pic{
 	box-sizing: border-box;
-	height: 20em;
+	height: 14em;
 	background-size: 100% 100%;
-	/*float: left;*/
 	margin-left: auto;
 	margin-right: auto;
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://mminute.github.io/images/beerTaps.jpg);
-	width: 70%;
-	margin-top: 1em;
 
 	@media (min-width: 550px){
+		margin-top: 1em;
+		height: 20em;
+		width: 90%;
+	}
+
+	@media (min-width: 1000px){
 		width: 50%;
 		margin-top: 0;
 		margin-left: auto;
 		margin-right: 0;
 		float: left;
-		height: 24em;
+		height: 35em;
+	}
+}
+
+.beer-pic-type{
+	font-family: source-sans-pro;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	position: absolute;
+	top: 1.3em;
+	left: 0.25em;
+
+	@media (min-width: 550px){
+		top: 0.8em;
+		text-align: left;
+		font-size: 75px;
 	}
 
 	@media (min-width: 1000px){
-		height: 30em;
+		top: 1.3em;
 	}
 }
 
 .info-type-box-beer{
 	background-color: white;
-	/*float: left;*/
 	margin-right: auto;
 	margin-left: auto;
-	padding: 1em;
-	width: 70%;
-	height: 20em;
+	margin-bottom: 0;
+	padding: 2em;
+	height: 25em;
 
 	@media (min-width: 550px){
-		width: 50%;
-		margin-right: auto;
-		margin-left: 0;
-		float: left;
-		height: 24em;
+		width: 90%;
 	}
 
 	@media (min-width: 1000px){
-		height: 30em;
+		width: 50%;
+		float: left;
+		height: 35em;
+		margin-right: auto;
+		margin-left: 0;
 	}
 }
 
@@ -461,9 +487,12 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	font-family: adelle;
 	font-size: 1em;
 	background-color: white;
-	text-align: left;
+	text-align: center;
+	padding: 1em;
 	position: absolute;
 	line-height: 1.4em;
+	margin-left: auto;
+	margin-right: auto;
 	left: 0.3em;
 
 	@media (min-width: 550px){
@@ -474,20 +503,22 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	@media (min-width: 1000px){
 		font-size: 1.2em;
 		padding: 1em;
+		max-width: 27em;
 	}
 }
 
 .info-type-beer{
 	@extend %info-type-b;
+	top: 0.2em;
+
+	@media (min-width: 550px){
 	top: 0.4em;
+	}
 }
 
 .beer-description{
 	font-size: 1em;
-	/*list-style-type: none;
-	font-family: adelle;
-	color: white;
-}*/
+}
 
 
 
@@ -681,7 +712,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	margin-left: auto;
 	margin-right: auto;
 }
-
 
 
 
