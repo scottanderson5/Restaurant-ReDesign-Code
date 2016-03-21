@@ -493,7 +493,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .bg-white{
 	background-color: white;
-	padding-left: 4em;
+	padding-left: 2em;
 }
 
 .bg-beverages{
@@ -575,7 +575,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .menu-title{
 	@extend %menu-style;
 	background-color: white;
-	font-size: 1.5em;
+	font-size: 1.7em;
 	text-align: center;
 	margin-bottom: 1em;
 	list-style-type: none;
@@ -584,11 +584,11 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	font-family: source-sans-pro;
 
 	@media (min-width:550px){
-		font-size: 2em;
+		font-size: 3em;
 	}
 
 	@media (min-width: 1000px){
-		font-size: 3em;
+		font-size: 4em;
 	}
 }
 
