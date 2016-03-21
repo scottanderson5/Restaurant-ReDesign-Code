@@ -388,12 +388,29 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .info-type-specials{
 	@extend %info-type;
-	top: 0.6em;
+	top: 2em;
+
+	@media (min-width:550px){
+		top: 2.8em;
+	}
+	
+
+	@media (min-width: 1000px){
+		top: 0.6em;
+	}	
 }
 
 .info-type-events{
 	@extend %info-type;
-	top: 2em;
+	top: 3em;
+
+	@media (min-width: 550px){
+		top: 3.5em;
+	}
+
+	@media (min-width: 1000px){
+		top: 2em;
+	}
 }
 
 .events-pic{
@@ -438,7 +455,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 		margin-left: auto;
 		margin-right: 0;
 		float: left;
-		height: 35em;
+		height: 38em;
 	}
 }
 
@@ -471,13 +488,14 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	height: 25em;
 
 	@media (min-width: 550px){
+		height: 31em;
 		width: 90%;
 	}
 
 	@media (min-width: 1000px){
 		width: 50%;
 		float: left;
-		height: 35em;
+		height: 38em;
 		margin-right: auto;
 		margin-left: 0;
 	}
@@ -496,14 +514,15 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	left: 0.3em;
 
 	@media (min-width: 550px){
-		font-size: 1.1em;
+		font-size: 1.35em;
 		line-height: 1.8em;
 	}
 
 	@media (min-width: 1000px){
-		font-size: 1.2em;
+		font-size: 1.4em;
+		line-height: 1.6em;
 		padding: 1em;
-		max-width: 27em;
+		min-height: 27em;
 	}
 }
 
