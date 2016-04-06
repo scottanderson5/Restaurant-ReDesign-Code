@@ -252,6 +252,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	text-align: center;
 	top: 5.7em;
 	left: 0.25em;
+	font-weight: 700;
 
 	@media (min-width: 550px){
 		font-size: 70px;
@@ -279,18 +280,18 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	font-family: source-sans-pro;
 	color: white;
 	text-align: center;
-	font-size: 16px;
+	font-size: 1em;;
 	margin-top: 0;
 	margin-bottom: 0;
 	
 	@media (min-width: 550px){
-		font-size: 24px;
+		font-size: 1.35em;
 		padding-top: 1em;
 		padding-bottom: 1em;
 	}
 
 	@media (min-width: 1000px){
-		font-size: 32px;
+		font-size: 1.7em;;
 		padding-top: 2em;
 		padding-bottom: 2em;
 	}
@@ -353,7 +354,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	font-size: 40px;
 	text-align: center;
 	position: absolute;
-	top: 1.3em;
+	top: 1.2em;
 	left: 0.25em;
 
 	@media (min-width: 550px){
@@ -381,8 +382,9 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	}
 
 	@media (min-width: 1000px){
-		font-size: 1.8em;
-		padding: 1em;
+		font-size: 1.4em;
+		padding: 2em;
+		padding-top: 2.6em;
 	}
 }
 
@@ -455,7 +457,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 		margin-left: auto;
 		margin-right: 0;
 		float: left;
-		height: 38em;
+		height: 30em;
 	}
 }
 
@@ -488,14 +490,14 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	height: 25em;
 
 	@media (min-width: 550px){
-		height: 31em;
+		height: 20em;
 		width: 90%;
 	}
 
 	@media (min-width: 1000px){
 		width: 50%;
 		float: left;
-		height: 38em;
+		height: 30em;
 		margin-right: auto;
 		margin-left: 0;
 	}
@@ -514,13 +516,17 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	left: 0.3em;
 
 	@media (min-width: 550px){
-		font-size: 1.35em;
-		line-height: 1.8em;
+		font-size: 1em;
+		padding: 1em;
+		padding-right: 1.6em;
+		padding-left: 1.6em;
+		padding-bottom: 1em;
+		line-height: 1.5em;
 	}
 
 	@media (min-width: 1000px){
-		font-size: 1.4em;
-		line-height: 1.6em;
+		font-size: 1.1em;
+		line-height: 1.7em;
 		padding: 1em;
 		min-height: 27em;
 	}
@@ -546,7 +552,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .bg-color{
 	background-color: #F7F6F5;
-	padding: 0.5em;
+	padding: 1em;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -557,9 +563,9 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	padding-left: 0.8em;
 }
 
-.border{
+/*.border{
 	border: 3px solid #A42A2A;
-}
+}*/
 
 .menu{
 	background-color: white;
