@@ -223,25 +223,12 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 /****************INTRO PIC ************************/
 
+ #slides {
+      display:none;
+    }
+
 .welcome-pic{
-	/*background-image: url(restaraunt-redesign/Assets/BGImage.gif);*/
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
-	/*box-sizing: border-box;*/
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	width: 100%;
-	height: 8.1em;
-	padding: 0;
 	position: relative;
-
-	@media (min-width: 550px){
-		height: 23em;
-	}
-
-	@media (min-width: 1000px){
-		height: 30em;
-	}
 }
 
 .welcome-type{
@@ -250,19 +237,19 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	font-size: 32px;
 	position: absolute;
 	text-align: center;
-	top: 5.7em;
+	top: 1.7em;
 	left: 0.25em;
 	font-weight: 700;
 
 	@media (min-width: 550px){
 		font-size: 70px;
-		top: 3.5em;
+		top: 1.5em;
 	}
 
 	@media (min-width: 1000px){
 		font-size: 100px;
 		text-align: left;
-		top: 3em;
+		top: 1em;
 	}
 }
 
@@ -303,7 +290,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	box-sizing: border-box;
 	height: 14em;
 	background-size: 100% 100%;
-	/*float: left;*/
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0;
@@ -737,6 +723,126 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/****************** PLUGIN JQ CSS ***************/
+
+body {
+      -webkit-font-smoothing: antialiased;
+      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      /*color: #232525;*/
+      /*padding-top:70px;*/
+    }  
+    
+
+    #slides {
+      display: none;
+      position: relative;
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: inline-block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(/standard/img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px;
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px;
+    }
+
+    /*#slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }*/
+
+    .navbar {
+      overflow: hidden;
+    }
+
+    #slides {
+      display: none;
+    }
+
+    .container {
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto;
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto;
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px;
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px;
+      }
+    }
+
+    /* Prevents slides from flashing 
+    #slides {
+      display: none;
+    }*/
 
 
 

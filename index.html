@@ -12,11 +12,23 @@ layout: default
     
     <div class="row">
       <div class="col col-12">
-        <img src="Assets/BGImage.gif" class="welcome-pic">
-          <div class="welcome-type">
-          Welcome to Black Sheep Lodge
-          </div>
-        </div>
+    
+            <div class="container">
+              <div id="slides">
+                
+                <img src="http://do512blog.com/wp-content/uploads/2013/09/1044173_586695528037250_666052925_n.png">
+                <img src="http://therubi.com/wp-content/uploads/2015/06/Black-Sheep-Lodge-Bar.png">
+                <img src="http://do512blog.com/wp-content/uploads/2012/07/bsl.jpg">
+                <img src="http://www.mjandhungryman.com/wp-content/uploads/2014/01/Black-Sheep-Lodge-6378.jpg">
+                <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+                <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+
+              </div>
+            </div>
+         
+
+        <!--<img src="Assets/BGImage.gif" class="welcome-pic">-->
+          
       </div>
      </div> 
 
@@ -142,7 +154,17 @@ layout: default
 <footer></footer>
 
 <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-<script src="/JQuery/main.js" type="text/javascript"></script>
+<script src="/standard/js/jquery.slides.min.js" type="text/javascript"></script>
+
+<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+    });
+  </script>
 
 </body>
 
