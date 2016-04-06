@@ -223,13 +223,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 /****************INTRO PIC ************************/
 
- #slides {
-      display:none;
-    }
-
-.welcome-pic{
-	position: relative;
-}
 
 .welcome-type{
 	font-family: source-sans-pro;
@@ -729,14 +722,13 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 body {
       -webkit-font-smoothing: antialiased;
       font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-      /*color: #232525;*/
+      color: #232525;
       /*padding-top:70px;*/
     }  
     
 
     #slides {
       display: none;
-      position: relative;
     }
 
     #slides .slidesjs-navigation {
@@ -784,7 +776,7 @@ body {
       background-position: 0 -26px;
     }
 
-    /*#slides a:link,
+    #slides a:link,
     #slides a:visited {
       color: #333
     }
@@ -792,7 +784,7 @@ body {
     #slides a:hover,
     #slides a:active {
       color: #9e2020
-    }*/
+    }
 
     .navbar {
       overflow: hidden;
@@ -804,7 +796,6 @@ body {
 
     .container {
       margin: 0 auto;
-      position: relative;
     }
 
     /* For tablets & smart phones */
@@ -820,6 +811,11 @@ body {
 
     /* For smartphones */
     @media (max-width: 480px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
       .container {
         width: auto;
       }
