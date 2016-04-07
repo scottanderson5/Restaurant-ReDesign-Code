@@ -188,6 +188,11 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .ul-nav-bar {
     overflow: hidden;
+    width: 80%;
+
+    @media (min-width:550px){
+		width: 100%;
+    }
 }
 
 .li-nav-bar {
@@ -468,7 +473,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
     margin-left: auto;
     margin-bottom: 0;
     padding: 2em;
-    height: 25em;
+    height: 29.5em;
     @media (min-width: 550px) {
         width: 90%;
         height: 20em;
