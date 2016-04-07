@@ -800,7 +800,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
     @media (max-width: 767px) {
       body {
         padding-left: 20px;
-        padding-right: 20px;
+        /*padding-right: 20px;*/
       }
       .container {
         width: auto
@@ -821,9 +821,9 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
       }
     }
 
-    /* For larger displays */
+    /* For larger displays 
     @media (min-width: 1200px) {
       .container {
         width: 1170px
       }
-    }
+    }*/
