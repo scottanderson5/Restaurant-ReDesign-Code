@@ -248,7 +248,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 .description-type {
-    font-family: source-sans-pro;
+    font-family: 'source-sans-pro';
     color: white;
     text-align: center;
     font-size: 1em;
@@ -347,7 +347,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 .specials-pic-type {
-    font-family: source-sans-pro;
+    font-family: 'source-sans-pro';
     color: white;
     font-size: 40px;
     text-align: center;
@@ -364,7 +364,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 %info-type {
-    font-family: adelle;
+    font-family: 'adelle';
     font-size: 1.15em;
     text-align: center;
     position: absolute;
@@ -419,7 +419,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 .address {
-    font-family: adelle;
+    font-family: 'adelle';
     font-size: 0.8em;
     margin-bottom: 1em;
 }
@@ -450,7 +450,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 .beer-pic-type {
-    font-family: source-sans-pro;
+    font-family: 'source-sans-pro';
     color: white;
     font-size: 40px;
     text-align: center;
@@ -487,7 +487,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 %info-type-b {
-    font-family: adelle;
+    font-family: 'adelle';
     font-size: 1em;
     color: white;
     text-align: center;
@@ -573,7 +573,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 %menu-style {
     text-align: left;
-    font-family: adelle;
+    font-family: 'adelle';
 }
 
 .menu-nav-left {
@@ -613,7 +613,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
     list-style-type: none;
     color: #A42A2A;
     text-decoration: underline;
-    font-family: source-sans-pro;
+    font-family: 'source-sans-pro';
     @media (min-width: 550px) {
         font-size: 3em;
     }
@@ -629,7 +629,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
     text-align: center;
     color: #A42A2A;
     text-decoration: underline;
-    font-family: source-sans-pro;
+    font-family: 'source-sans-pro';
     @media (min-width: 550px) {
         font-size: 2em;
     }
@@ -672,7 +672,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .mini-cat {
     font-size: 1em;
     color: #CC990A;
-    font-family: adelle;
+    font-family: 'adelle';
     list-style-type: none;
     text-align: left;
     @media (min-width: 550px) {
