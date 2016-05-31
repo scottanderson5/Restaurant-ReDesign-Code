@@ -196,7 +196,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 .li-nav-bar {
-    font-family: adelle;
+    font-family: 'adelle';
     display: inline-block;
     margin-left: 0.2em;
     margin-right: 0.2em;
@@ -210,7 +210,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 /****************INTRO PIC ************************/
 
 .welcome-type {
-    font-family: source-sans-pro;
+    font-family: 'source-sans-pro';
     color: white;
     font-size: 32px;
     position: absolute;
