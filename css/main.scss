@@ -209,23 +209,45 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 /****************INTRO PIC ************************/
 
+.welcome-pic{
+    background-image: url(restaraunt-redesign/Assets/BGImage.gif);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+    /*box-sizing: border-box;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 8.1em;
+    padding: 0;
+    position: relative;
+  
+    @media (min-width: 550px){
+        height: 23em;
+    }
+
+    @media (min-width: 1000px){
+        height: 30em;
+    }
+  }
+
 .welcome-type {
     font-family: 'source-sans-pro';
     color: white;
     font-size: 32px;
     position: absolute;
     text-align: center;
-    top: 1.7em;
+    top: 3.4em;
     left: 0.25em;
     font-weight: 700;
+    
     @media (min-width: 550px) {
         font-size: 70px;
-        top: 1.5em;
+        top: 2.5em;
     }
     @media (min-width: 1000px) {
         font-size: 100px;
         text-align: left;
-        top: 1em;
+        top: 2.5em;
     }
 }
 
