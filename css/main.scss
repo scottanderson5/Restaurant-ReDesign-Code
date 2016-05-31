@@ -78,6 +78,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 /************** STYLING ***********************/
 
+
 .center {
     text-align: center;
 }
@@ -85,6 +86,14 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .auto-margin {
     margin-right: auto;
     margin-left: auto;
+}
+
+.margin-top{
+    margin-top: 1em;
+
+    @media (min-width: 550px){
+    margin-top: 6em;
+    }
 }
 
 .height-5 {
@@ -152,10 +161,21 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 /******************* HEADER IMAGE *******************/
 
+.site-header{
+    overflow: hidden;
+    background-color: #CBB278;
+    margin-left: 0em;
+    padding-left: 0em;
+}
+
+
 .wrap-sheep {
-    width: 9%;
-    box-size: border-box;
+    width: 20%;
+    margin-right: 0em;
+    float: left;
+
     @media (min-width: 550px) {
+        width: 9%;
         margin-right: auto;
         margin-left: auto;
     }
@@ -175,18 +195,17 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 /******************* NAV BAR ***********************/
 
 .nav-bar {
-    width: 100%;
     box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1em;
+    margin: 2em auto 1em auto;
     overflow: hidden;
+    display: none;
+    float: left;
     @media (min-width: 550px) {
-        width: 34em;
+        display: block;
     }
 }
 
-.ul-nav-bar {
+%ul-nav-bar {
     overflow: hidden;
     width: 80%;
 
@@ -195,29 +214,68 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
     }
 }
 
-.li-nav-bar {
+.ul-nav-barA{
+    @extend %ul-nav-bar;
+}
+
+.ul-nav-barB{
+    @extend %ul-nav-bar;
+    display: none;
+    z-index: 10;
+    transform: translate(17em, 5em);
     font-family: 'adelle';
-    font-size: 1.1em;
-    display: inline-block;
+    list-style-type: none;
+    background: brown;
+    padding: 1em;
+    color: white;
+    position: absolute;
+}
+
+
+%li-nav-bar {
+    font-family: 'adelle';
+    font-size: 1em;
     margin-left: 0.2em;
     margin-right: 0.2em;
     @media (min-width: 550px) {
         margin-right: 1em;
         margin-left: 1em;
     }
+
+    @media (min-width: 1000px){
+         font-size: 1.1em;
+    }
 }
 
 .li-nav-barA {
-    font-family: 'adelle';
-    font-size: 1.1em;
+    @extend %li-nav-bar;
     display: inline-block;
-    margin-left: 0.2em;
-    margin-right: 0.2em;
+    
     @media (min-width: 550px) {
-        margin-right: 1em;
-        //margin-left: 1em;
+        margin-left: 0em;
+    } 
+}
+
+.li-nav-barC {
+    @extend %li-nav-bar;
+    padding-bottom: 0.3em;
+}
+
+.mobile-menu{
+    display: block;
+    float: right;
+    font-size: 3em;
+    padding-top: 0.4em;
+
+    @media (min-width: 550px){
+        display: none;
     }
 }
+
+.bars-sizing{
+    width: 1.5em;
+}
+
 
 
 /****************INTRO PIC ************************/
@@ -225,7 +283,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .welcome-pic{
     background-image: url(restaraunt-redesign/Assets/BGImage.gif);
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
-    /*box-sizing: border-box;*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -249,7 +306,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
     font-size: 32px;
     position: absolute;
     text-align: center;
-    top: 3.4em;
+    top: 3.9em;
     left: 0.25em;
     font-weight: 700;
     
@@ -458,6 +515,14 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
     font-size: 1.2em;
     margin-bottom: 1em;
     margin-top: 0.4em;
+
+    @media (min-width: 550px){
+        font-size: 1em;
+    }
+
+     @media (min-width: 1000px){
+        font-size: 1.2em;
+    }
 }
 
 
@@ -758,125 +823,8 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
     @media (min-width: 1000px) {
         margin: 0 auto;
         width: 75%;
-        height: 28em;
+        height: 24em;
     }
 }
 
 
-/****************** PLUGIN JQ CSS ***************/
-
-body {
-    -webkit-font-smoothing: antialiased;
-    font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #232525;
-}
-
-#slides {
-    display: none
-}
-
-#slides .slidesjs-navigation {
-    margin-top: 3px;
-}
-
-#slides .slidesjs-previous {
-    margin-right: 5px;
-    float: left;
-}
-
-#slides .slidesjs-next {
-    margin-right: 5px;
-    float: left;
-}
-
-.slidesjs-pagination {
-    margin: 6px 0 0;
-    float: right;
-    list-style: none;
-}
-
-.slidesjs-pagination li {
-    float: left;
-    margin: 0 1px;
-}
-
-.slidesjs-pagination li a {
-    display: block;
-    width: 13px;
-    height: 0;
-    padding-top: 13px;
-    background-image: url(/standard/img/pagination.png);
-    background-position: 0 0;
-    float: left;
-    overflow: hidden;
-}
-
-.slidesjs-pagination li a.active,
-.slidesjs-pagination li a:hover.active {
-    background-position: 0 -13px
-}
-
-.slidesjs-pagination li a:hover {
-    background-position: 0 -26px
-}
-
-#slides a:link,
-#slides a:visited {
-    color: #333
-}
-
-#slides a:hover,
-#slides a:active {
-    color: #9e2020
-}
-
-.navbar {
-    overflow: hidden
-}
-
-#slides {
-    display: none
-}
-
-.container {
-    margin: 0 auto
-}
-
-
-/* For tablets & smart phones */
-
-@media (max-width: 767px) {
-    body {
-        padding-left: 20px;
-        /*padding-right: 20px;*/
-    }
-    .container {
-        width: auto
-    }
-}
-
-
-/* For smartphones */
-
-@media (max-width: 480px) {
-    .container {
-        width: auto
-    }
-}
-
-
-/* For smaller displays like laptops */
-
-@media (min-width: 768px) and (max-width: 979px) {
-    .container {
-        width: 724px
-    }
-}
-
-
-/* For larger displays 
-    @media (min-width: 1200px) {
-      .container {
-        width: 1170px
-      }
-    }*/
