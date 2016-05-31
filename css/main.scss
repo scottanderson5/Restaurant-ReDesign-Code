@@ -182,7 +182,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
     margin-bottom: 1em;
     overflow: hidden;
     @media (min-width: 550px) {
-        width: 32em;
+        width: 34em;
     }
 }
 
@@ -352,7 +352,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
     font-size: 40px;
     text-align: center;
     position: absolute;
-    top: 1.2em;
+    top: 1em;
     left: 0.25em;
     @media (min-width: 550px) {
         text-align: left;
@@ -527,6 +527,20 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 /*************** MENU *******************************/
 
+.menu-wrap {
+    background-color: brown;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    padding: 2em;
+    @media (min-width: 550px) {
+        width: 90%;
+    }
+    @media (min-width: 1000px) {
+        margin: 0 auto;
+    }
+}
+
 .bg-color {
     background-color: #F7F6F5;
     padding: 1em;
@@ -693,6 +707,23 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .m-width-desserts {
     margin-left: auto;
     margin-right: auto;
+}
+
+.dessert-wrap {
+    background-color: #CC990A;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    padding: 2em;
+    @media (min-width: 550px) {
+        width: 90%;
+        height: 23em;
+    }
+    @media (min-width: 1000px) {
+        margin: 0 auto;
+        width: 75%;
+        height: 28em;
+    }
 }
 
 
