@@ -197,12 +197,25 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .li-nav-bar {
     font-family: 'adelle';
+    font-size: 1.1em;
     display: inline-block;
     margin-left: 0.2em;
     margin-right: 0.2em;
     @media (min-width: 550px) {
         margin-right: 1em;
         margin-left: 1em;
+    }
+}
+
+.li-nav-barA {
+    font-family: 'adelle';
+    font-size: 1.1em;
+    display: inline-block;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    @media (min-width: 550px) {
+        margin-right: 1em;
+        //margin-left: 1em;
     }
 }
 
@@ -442,8 +455,9 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .address {
     font-family: 'adelle';
-    font-size: 0.8em;
+    font-size: 1.2em;
     margin-bottom: 1em;
+    margin-top: 0.4em;
 }
 
 
