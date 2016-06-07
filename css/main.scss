@@ -222,7 +222,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
     @extend %ul-nav-bar;
     display: none;
     z-index: 10;
-    transform: translate(17em, 5em);
+    transform: translate(12em, 5em);
     font-family: 'adelle';
     list-style-type: none;
     background: brown;
